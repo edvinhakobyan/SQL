@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ConsoleApp1",
+    "\\ConsoleApp1\\packages",
+    "\\ConsoleApp1\\packages\\EntityFramework.6.2.0",
+    "\\SQL",
+    "\\SQL\\MyFile"
   ],
+  "SelectedNode": "\\ConsoleApp1\\packages",
   "PreviewInSolutionExplorer": false
 }
