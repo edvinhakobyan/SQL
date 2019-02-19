@@ -1,0 +1,66 @@
+create database ShopDB
+ON
+(
+name = 'ShopDb',
+FileName = 'E:\ITVDN\06 [ITVDN] SQL Essential\File\ShopDb.mdf'
+)
+log on
+(
+name = 'ShopDbLog',
+FileName = 'E:\ITVDN\06 [ITVDN] SQL Essential\File\ShopDbLog.ldf'
+)
+
+use ShopDB
+
+create table atable
+(
+bit_ bit ,
+tinyint_ tinyint ,
+smallint_ smallint ,
+int_ int ,
+bigint_ bigint ,
+float_2 float(2) ,
+decimal52_ decimal(5,2),
+smallmoney_ smallmoney,
+money_ money,
+char_ char,
+char_8000 char(8000),
+varchar_ varchar,
+varchar_8000 varchar(8000),
+varcharmax_ varchar(max),
+Nchar_ Nchar,
+Nchar_4000 Nchar(4000),
+Nvarchar_ Nvarchar,
+Nvarchar_4000 Nvarchar(4000),
+Nvarcharmax_ Nvarchar(max),
+datetime_ datetime,
+datetimeoffset_ datetimeoffset,
+datetimeoffset_7 datetimeoffset(7),
+date_ date,
+time_ time,
+binary_ binary,
+binary_8000 binary(8000),
+varbinary_ varbinary,
+varbinary_8000 varbinary(8000),
+varbinary_max varbinary(max)
+)
+
+
+
+RESTORE FILELISTONLY
+FROM DISK = 'E:\ITVDN\06 [ITVDN] SQL Essential\File\AdventureWorksDW2016CTP3.bak'
+ALTER TABLE mischief
+ADD weekday TinyInt;
+
+
+RESTORE DATABASE IvaraApplicationTesting
+FROM DISK = 'E:\ITVDN\06 [ITVDN] SQL Essential\File\AdventureWorksDW2016CTP3.bak'
+
+WITH MOVE 'AdventureWorksDW2014_Data' TO 'E:\ITVDN\06 [ITVDN] SQL Essential\File\AdventureWorksDW2014_Data.mdf',
+MOVE 'AdventureWorksDW2014_Log' TO 'E:\ITVDN\06 [ITVDN] SQL Essential\File\AdventureWorksDW2014_Log.ldf',
+REPLACE;
+
+
+
+select * from DimDate
+select FullDateAlternateKey, FiscalQuarter   from DimDate
