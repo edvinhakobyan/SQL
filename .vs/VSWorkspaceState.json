@@ -1,12 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ConsoleApp1",
-    "\\ConsoleApp1\\packages",
-    "\\ConsoleApp1\\packages\\EntityFramework.6.2.0",
-    "\\SQL",
+    "\\ADO.net",
+    "\\ADO.net\\ADO.net",
+    "\\SqlComand",
+    "\\SqlComand\\SqlComand",
     "\\SQL\\MyFile"
   ],
-  "SelectedNode": "\\ConsoleApp1\\packages",
+  "SelectedNode": "\\SqlComand\\SqlComand\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
