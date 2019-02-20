@@ -1,12 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ADO.net",
     "\\ADO.net\\ADO.net",
+    "\\OpenAsinq",
     "\\SqlComand",
-    "\\SqlComand\\SqlComand",
-    "\\SQL\\MyFile"
+    "\\SqlComand\\SqlComand"
   ],
-  "SelectedNode": "\\SqlComand\\SqlComand\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

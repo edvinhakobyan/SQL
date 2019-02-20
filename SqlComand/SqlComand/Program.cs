@@ -49,17 +49,6 @@ namespace SqlComand
                     }
                 }
             }
-
-
-
-
-
-
-
-
-
-
-
         }
     }
 }
